@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int RNG(){
+
+	int rng;
+	time_t t;
+	
+	srand((unsigned) time(&t));
+	rng=rand() % 25;
+	printf("%d\n", rng);
+	
+	return rng;
+}
+
+int main(void){
+
+	int num;
+
+	num=RNG();
+
+	printf("%d\n",num);
+
+	return 0;
+}
